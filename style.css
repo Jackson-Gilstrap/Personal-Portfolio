@@ -1,0 +1,102 @@
+/* css varibles  */
+:root {
+    --text: #1a0f05;
+    --background: #efe5dc;
+    --primary: #3697ec;
+    --secondary: #d4e7f7;
+    --accent: #262cd9;
+}
+
+/* css resets */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+
+}
+
+img,
+picture,
+svg,
+video {
+    display: block;
+    max-width: 100%;
+}
+
+/* begin actual css */
+
+body {
+    background-color: var(--background);
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.navigation {
+    position: sticky;
+    top: 0;
+    margin: 0 20px;
+    height: 10vh;
+}
+
+.navigation ul {
+    list-style-type: none;
+    color: var(--text);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0px auto;
+    padding: 20px;
+}
+
+.navigation ul li {
+    margin: 0 10px;
+    padding: 10px;
+
+}
+
+.navigation ul li a {
+    text-decoration: none;
+    color: var(--text);
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.home-cta {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 50vh;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.main-text {
+    font-size: 32px;
+}
+
+.main-text h1 {
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+
+}
+
+.main-text h1 span {
+    color: var(--primary);
+}
+
+.main-text p {
+    font-weight: 700;
+
+}
+
+.main-text p .chevron {
+    color: var(--primary);
+}
+
+#profile-img {
+    border-radius: 300px;
+    max-width: 250px;
+    min-width: 200px;
+}
